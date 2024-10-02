@@ -8,14 +8,20 @@ body {
 
 
 #background-video {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   z-index: -1;
+
+
+
+
 }
+
+
 
 
 header {
@@ -42,10 +48,27 @@ nav a {
   text-decoration: none;
   color: black;
   margin: 0 10px;
+
+  transition: all ease-in-out .5s;
+
+
+}
+
+p {
+  margin: 0;
 }
 
 nav a:hover {
   color: darkorchid;
+  font-size: 30px;
+}
+
+
+footer {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100svh;
 }
 
 
@@ -96,5 +119,17 @@ nav a:hover {
     transform: translateY(0px);
   }
 
+}
+
+.height-1-4{
+  height: 25svh;
+
+}
+
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
